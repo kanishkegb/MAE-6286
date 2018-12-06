@@ -26,3 +26,18 @@ Central difference is unconditionally unstable
 ## Lesson 4
 * Second-order methods: explicit midpoint method / modified Euler method / RK2 method
 * Multi-step methods: 
+
+
+# Module 2
+## Lesson 1
+* 1D linear convection
+* Spatial discretizing: forward, backward, central
+* Spatial truncation error
+
+## Lesson 2
+* CFL condition
+
+## Lesson 3
+* 1D diffusion
+
+
