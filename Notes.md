@@ -46,3 +46,38 @@ Central difference is unconditionally unstable
 * Burgers' equation
 * SymPy: diff, lambdify
 * Animations: update
+
+# Module 3
+### Lesson 1
+* Conservation laws
+* Traffic flow model
+* FTBS
+
+### Lesson 2
+* Lax-Friedrichs: convection > FTCS is unstable; this stabilizes FTCS; but introduces 1st order error
+* Lax-Wendroff: first scheme ever to achieve 2nd-order accuracy in both space and time; captures the sharpness of the shock; makes an overshoot; needs to calculate expensive Jacobian every time step
+* MacCormack: two steps; predictor and corrector; 
+* Odd-even coupling: staircase behavior on the leading edge of the wave
+* Taylor series expansion
+
+### Lesson 3
+* Better flux model
+* SymPy: equation solving
+
+### Lesson 4
+* Finite volume method
+* 
+
+# Module 4
+### Lesson 1
+* Parabolic PDEs
+* Diffusion
+### Lesson 2
+### Lesson 3
+### Lesson 4
+
+# Module 5
+### Lesson 1
+### Lesson 2
+### Lesson 3
+### Lesson 4
