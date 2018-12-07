@@ -11,33 +11,38 @@ u^{n+1} = ((u^n + \Delta t du/dt|_n)) + (((\Delta t ^2 /2 * du^2/d^2t|n + ( \Del
 Central difference is unconditionally unstable
 
 # Module 1
-## Lesson 1
+### Lesson 1
 * Phogoid mode - intro
 
-## Lesson 2
+### Lesson 2
 * First-order systems
 * Euler step
 * L1 norm (analytical solution)
 
-## Lesson 3
+### Lesson 3
 * L1 norm (no analytical solution / grid convergence)
 * Order of convergence
 
-## Lesson 4
+### Lesson 4
 * Second-order methods: explicit midpoint method / modified Euler method / RK2 method
 * Multi-step methods: 
 
 
 # Module 2
-## Lesson 1
+### Lesson 1
 * 1D linear convection
 * Spatial discretizing: forward, backward, central
 * Spatial truncation error
 
-## Lesson 2
+### Lesson 2
 * CFL condition
 
-## Lesson 3
+### Lesson 3
 * 1D diffusion
+* Discretizing 2nd order derivatives
+* Stability of diffusion equation
 
-
+### Lesson 4
+* Burgers' equation
+* SymPy: diff, lambdify
+* Animations: update
