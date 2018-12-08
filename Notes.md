@@ -78,6 +78,18 @@ Central difference is unconditionally unstable
 
 # Module 5
 ### Lesson 1
+* Possion's equation: `u` is unknown, `f` a function of space, need all BCs
+* Laplce's equation: `f=0` (homogeneous case)
+* Studey of solutions to Laplace's eqn = potential theory; solutions = potential fields
+* Jacobi method: simplest relaxation scheme, worst iterative solver
+* 3D surface plots + colormaps
+* normalized L2 norm
+* Dirichlet conditions are order-agnostic
+
 ### Lesson 2
+* Possion equation: source term = RHS
+* Algebraic convergence
+* Spatial convergence
+
 ### Lesson 3
 ### Lesson 4
