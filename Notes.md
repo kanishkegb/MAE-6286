@@ -78,6 +78,7 @@ Central difference is unconditionally unstable
 
 # Module 5
 ### Lesson 1
+* Elliptic PDEs
 * Possion's equation: `u` is unknown, `f` a function of space, need all BCs
 * Laplce's equation: `f=0` (homogeneous case)
 * Studey of solutions to Laplace's eqn = potential theory; solutions = potential fields
@@ -89,7 +90,17 @@ Central difference is unconditionally unstable
 ### Lesson 2
 * Possion equation: source term = RHS
 * Algebraic convergence
-* Spatial convergence
+* Spatial convergence: Dirichlet boundaries are "exact" and will never impact spatial convergence
 
 ### Lesson 3
+* %%timeit
+* Gauss-Seidal: 2x faster than Jacobi method
+* Numba - JIT with nopython: `@jit(nopython=True)`
+* SOR (Successive over-relaxation): improve on the Gauss-Seidel method by using in the update a linear combination of the previous and the current solution
+* SOR stable only for `0<ω<2`: `ω = 1` = Gauss-Seidal, `ω < 1` = under relaxation, `ω > 1` = over relaxation (must converge fater than GS)
+* Tuned SOR: over-relax the solution as much as possible without introducing instability
+* Decay of the difference between iterates
+
 ### Lesson 4
+* Steepest descent:  two successive jumps are orthogonal, not too good when used with large systems or more complicated right-hand sides in the Poisson equation
+* Conjugate gradient (CG): residual
