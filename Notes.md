@@ -71,8 +71,14 @@ Central difference is unconditionally unstable
 # Module 4
 ### Lesson 1
 * Parabolic PDEs
-* Diffusion
+* Diffusion: eg. heat conduction
+* FTCS
+* Dirichlet BC
+* Neumann BC
+* Explicit schemes: need small step sizes, BC changes affect the next time step
+
 ### Lesson 2
+* Implicit method
 ### Lesson 3
 ### Lesson 4
 
