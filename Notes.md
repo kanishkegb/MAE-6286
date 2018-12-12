@@ -1,14 +1,20 @@
-### Truncation Error (TE)
+# Presentations
+### MAE6286-2018-09-18
+* observed order of convergence
+* refinement ratio
+* LTE - p.9
+* GTE - p.10
+* intro to PDEs - all equations summary p.15
 
-* Local TE (LTE): diff between the numerical solution u_{n+1} after one step size \Delta t and the exact solution u(t_{n+1})
-LTE = u(t_n + \Delta t) - u_{n+1}
-* Global TE (GTE): all LTE at a given time
-u^{n+1} = ((u^n + \Delta t du/dt|_n)) + (((\Delta t ^2 /2 * du^2/d^2t|n + ( \Delta t^3))))
-((Euler's method)) ((LTE))
+### MAE6286-2018-10-02
+* Definitions of consistency, stability, and convergence
 
+### MAE6286-2018-10-16
+* If the numerical diffusion coefficient is negative, the solution will be unstable
+* FTCS is unstable for linear convection (unconditionally unstable) p.10
+* von Neumann stability analysis p.11
+* conservation laws p.16
 
-### 1D Convection
-Central difference is unconditionally unstable
 
 # Module 1
 ### Lesson 1
