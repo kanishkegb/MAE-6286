@@ -15,6 +15,37 @@
 * von Neumann stability analysis p.11
 * conservation laws p.16
 
+### MAE6286-2018-10-16
+* classification of PDEs
+* upwind schemes: BS - unstable for negative waves, numerical scheme should have the same directionality p.17
+
+### MAE6286-2018-10-30
+* Lax-equivalence theorem: For a well-posed I.V.P. and a consistent discretization scheme, stability is the necessary and sufficient condition for convergence.
+* **go through this again**
+
+### MAE6286-2018-11-06
+* Backward Euler method (implicit): u^(n+1) = u^n + Δt RHS^(n+1) p.12
+* BCs for implicit method
+* [A][x] = [b] + [BCs]: LHS set at the beginning, RHS updated every time step p.15
+* stability of implicit schemes: unconditionally stable, but stability does not mean the convergence
+
+### MAE6286-2018-11-13
+* 2D stability: σx + σy ≤ 12
+
+### MAE6286-2018-11-20
+* Crank-Nicolson: semi-implicit scheme, second-order accurate in time
+* CS scheme
+* All-in-one explanation p.7
+
+### MAE6286-2018-11-27
+* elliptic equations: no time-dependence (steady-state solution), driven by BCs
+* 2D Laplace p.6
+* Jacobi method p.8
+* L2-norm p.12
+* second-order Neumann condition p.15
+
+### MAE6286-2018-12-04
+* summary of relaxation methods with equations p.12
 
 # Module 1
 ### Lesson 1
@@ -60,7 +91,7 @@
 * FTBS
 
 ### Lesson 2
-* Lax-Friedrichs: convection > FTCS is unstable; this stabilizes FTCS; but introduces 1st order error
+* Lax-Friedrichs: convection > FTCS is unstable; this stabilizes FTCS by replacing rho_i^n by its average; but introduces 1st order error
 * Lax-Wendroff: first scheme ever to achieve 2nd-order accuracy in both space and time; captures the sharpness of the shock; makes an overshoot; needs to calculate expensive Jacobian every time step
 * MacCormack: two steps; predictor and corrector; 
 * Odd-even coupling: staircase behavior on the leading edge of the wave
