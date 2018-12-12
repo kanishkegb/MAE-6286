@@ -78,9 +78,18 @@ Central difference is unconditionally unstable
 * Explicit schemes: need small step sizes, BC changes affect the next time step
 
 ### Lesson 2
-* Implicit method
+* Implicit method - 1D
+
 ### Lesson 3
+* 2D - heat conduction
+* 2D stability
+* pyplot.contourf
+
 ### Lesson 4
+
+### Lessson 5
+* Crank-Nicolson scheme: second-order method in both time and space (all others first-order in time and second-order in space)
+* 
 
 # Module 5
 ### Lesson 1
