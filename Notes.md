@@ -20,17 +20,17 @@
 * upwind schemes: BS - unstable for negative waves, numerical scheme should have the same directionality p.17
 
 ### MAE6286-2018-10-30
-* Lax-equivalence theorem: For a well-posed I.V.P. and a consistent discretization scheme, stability is the necessary and sufficient condition for convergence.
-* **go through this again**
+* Lax-equivalence theorem: For a well-posed IVP. and a consistent discretization scheme, stability is the necessary and sufficient condition for convergence.
+* Rusanov flux
 
 ### MAE6286-2018-11-06
-* Backward Euler method (implicit): u^(n+1) = u^n + Δt RHS^(n+1) p.12
+* Backward Euler method (implicit): `u^(n+1) = u^n + Δt RHS^(n+1)` p.12
 * BCs for implicit method
-* [A][x] = [b] + [BCs]: LHS set at the beginning, RHS updated every time step p.15
+* `[A][x] = [b] + [BCs]`: LHS set at the beginning, RHS updated every time step p.15
 * stability of implicit schemes: unconditionally stable, but stability does not mean the convergence
 
 ### MAE6286-2018-11-13
-* 2D stability: σx + σy ≤ 12
+* 2D stability: `σx + σy ≤ 12`
 
 ### MAE6286-2018-11-20
 * Crank-Nicolson: semi-implicit scheme, second-order accurate in time
@@ -91,7 +91,7 @@
 * FTBS
 
 ### Lesson 2
-* Lax-Friedrichs: convection > FTCS is unstable; this stabilizes FTCS by replacing rho_i^n by its average; but introduces 1st order error
+* Lax-Friedrichs: convection > FTCS is unstable; this stabilizes FTCS by replacing `rho_i^n` by its average; but introduces 1st order error
 * Lax-Wendroff: first scheme ever to achieve 2nd-order accuracy in both space and time; captures the sharpness of the shock; makes an overshoot; needs to calculate expensive Jacobian every time step
 * MacCormack: two steps; predictor and corrector; 
 * Odd-even coupling: staircase behavior on the leading edge of the wave
@@ -103,7 +103,14 @@
 
 ### Lesson 4
 * Finite volume method
-* 
+* Godunov's method: first-order method that uses the integral form of the conservation laws
+* Riemann problem: a situation where you have a conservation law with a constant initial condition, except for a single jump discontinuity (has an analytical solution)
+* Godunov: represent solution as piecewise constant, use the analytical solution of the Riemann problem at each cell boundary, gives all the information about the characteristic structure of the solution, including the sign of the wave speed, union of all the Riemann solutions at cell boundaries gets the full solution
+* first-order accurate, not appropriate for hyperbolic conservation laws
+* Rusanov flux
+* MUSCLE scheme - Monotonic Upstream-Centered Scheme for Conservation Laws
+* minmod - use the smallest one-sided slope in magnitude, if slopes have different sign, use the constant reconstruction, i.e. Godunov's method
+* MUSCL: no oscillations, but the features are not as sharp
 
 # Module 4
 ### Lesson 1
@@ -115,7 +122,8 @@
 * Explicit schemes: need small step sizes, BC changes affect the next time step
 
 ### Lesson 2
-* Implicit method - 1D
+* implicit method - 1D
+* put what we don't know on the left and what we do know on the right
 
 ### Lesson 3
 * 2D - heat conduction
@@ -123,10 +131,15 @@
 * pyplot.contourf
 
 ### Lesson 4
+* implicit method - 2D
+* put what we don't know on the left and what we do know on the right
+* iterate over the nodes in an x-major order: index `i` will run faster.
 
 ### Lessson 5
 * Crank-Nicolson scheme: second-order method in both time and space (all others first-order in time and second-order in space)
-* 
+* Crank-Nicolson is an unconditionally stable scheme for the diffusion equation
+* comparison on spatial convegence and time convergence
+* BCs can affect the convergence and accuracy of your solution!
 
 # Module 5
 ### Lesson 1
